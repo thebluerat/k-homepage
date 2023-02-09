@@ -45,11 +45,21 @@ nav {
     background-color: #fff;
     width: inherit;
     height: 280px;
-    display: none;
-    border: 1px solid rgba(26, 26, 112, 0.24);
+    background-color: #ddd;
+    /* display: none; */
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
     position: absolute;
     box-shadow: 1px 5px 5px -5px #ddd;
+    /* full-width */
+    /* left: 0;
+    padding: 0.5em 1000em;
+    margin: 0 -1000em;
+    z-index: 101; */
 }
+/* .submenu li {
+    width: 100%;
+} */
 .menu > li:first-child > .submenu {
     left: 0;
     padding: 0 640px;
