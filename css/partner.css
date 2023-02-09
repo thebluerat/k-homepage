@@ -1,0 +1,40 @@
+.container {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content:left;
+}
+.title > h1, .title > span {
+    align-self: last baseline;
+}
+.title > span {
+    margin-left: 20px;
+    color: rgb(26, 26, 112);
+    font-weight: 600;
+}
+.service.inner > hr {
+    border: 2px solid rgb(26, 26, 112);
+    margin-bottom: 40px;
+}
+.partner-wrap {
+    background-color: #000;
+    height: inherit;
+    width: 100%;
+}
+.partner-box > hr {
+    width: 40%;
+    border: 2px solid rgb(26, 26, 112);
+}
+.partner-logo-box {
+    width: 200px;
+    height: 100px;
+}
+.partner-logo-box > img {
+    width: 200px;
+    height: 100px;
+    object-fit: fill;
+}

@@ -1,0 +1,112 @@
+.slogan {
+    background: no-repeat center center url("../images/valueback.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-top: 80px;
+}
+.slogan-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px;
+}
+.slogan-text > span {
+    display: block;
+    font-size: 2em;
+    mix-blend-mode: exclusion;
+}
+.about {
+    padding-top: 80px;
+    height: 50vh;
+    text-align: center;
+}
+hr {
+    width: 80%;
+    border: 2px solid rgba(26, 26, 112);
+}
+.about > p {
+    margin-top: 50px;
+}
+.ceo-greetings, .director-greetings {
+    width: 100%;
+    height: 80vh;
+}
+.ceo-greetings > .inner, .director-greetings > .inner {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 100%;
+}
+.ceo-img, .ceo-text, .director-img, .director-text {
+    width: 640px;
+    height: 600px;
+}
+.ceo-img {
+    align-self:first baseline;
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+}
+.ceo-text {
+    background-color: #FCFFE7;
+    align-self:last baseline;
+    text-align: center;
+}
+.ceo-text > p {
+    padding-top: 20px;
+}
+.director-greetings {
+    padding-bottom: 50px;
+}
+.director-text {
+    box-sizing: border-box;
+    align-self: first baseline;
+    background-color: #FCFFE7;
+    text-align: center;
+}
+.director-text > p {
+    padding: 20px 40px 0px 30px;
+}
+.director-text > a {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(26, 26, 112);
+    color: white;
+    transition: 0.3s;
+}
+.director-text > a:hover {
+    background-color: rgba(26, 26, 112, 0);
+    color: rgba(26, 26, 112);
+    border-bottom: 2px solid rgba(26, 26, 112);
+    font-weight: 600;
+}
+.director-img {
+    align-self: last baseline;
+    background: center center url('../images/lab.jpg');
+    background-size: cover;
+}
+.gototop {
+    width: 50px;
+    height: 50px;
+    background-color:rgba(26, 26, 112);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.gototop.active {
+    visibility: visible;
+    opacity: 1;
+}
+.gototop a {
+    color: #fff;
+}

@@ -1,0 +1,36 @@
+.container {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.title h1 {
+    align-self: last baseline;
+}
+hr {
+    width: 80%;
+    border: 2px solid rgba(26, 26, 112);
+}
+.findus-info {
+    display: flex;
+}
+.findus-text-box {
+    padding-left: 300px;
+    flex: 1;
+}
+.findus-text {
+    padding-top: 40px;
+}
+.findus-text span {
+    font-weight: 600;
+}
+.findus-img {
+    flex: 0.7;
+    background: no-repeat  center url(../images/kephas.png);
+    background-size: contain;
+    margin-right: 200px;
+}

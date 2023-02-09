@@ -1,0 +1,83 @@
+.container {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content:left;
+}
+.title > h1, .title > span {
+    align-self: last baseline;
+}
+.title > span {
+    margin-left: 20px;
+    color: rgb(26, 26, 112);
+    font-weight: 600;
+}
+hr {
+    border: 2px solid rgb(26, 26, 112);
+    margin-bottom: 40px;
+}
+.service-content-box {
+    display: flex;
+    justify-content: space-around;
+}
+.service-content {
+    width: 280px;
+    height: 400px;
+    border: 2px solid rgb(26, 26, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.service-content:nth-child(1) {
+    background: no-repeat 5px  30px url(../images/mydata.png);
+    background-size: contain;
+}
+.service-content:nth-child(2) {
+    background: no-repeat center 30px url(../images/unitP.png);
+    background-size: contain;
+}
+.service-content:nth-child(3) {
+    background: no-repeat center 30px url(../images/S_mobile.png);
+    background-size: contain;
+}
+.service-text {
+    /* display: none; */
+    width: 270px;
+    height: 390px;
+    background-color: rgb(26, 26, 112);
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    position: absolute;
+    bottom: -305px;
+    transition: 0.2s; 
+    color: #fff;
+}
+.service-text h2 {
+    margin: 0;
+    line-height: 60px;
+    display: flex;
+}
+.service-text h2 img {
+    height: 50px;
+    margin-right: 20px;
+}
+.service-text > span {
+    display: block;
+}
+.service-text i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.service-content:hover .service-text{
+    bottom: 5px;
+}

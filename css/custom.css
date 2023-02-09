@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
