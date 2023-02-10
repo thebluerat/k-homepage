@@ -17,10 +17,10 @@ hr {
 }
 .findus-info {
     display: flex;
+    justify-content: center;
 }
 .findus-text-box {
-    padding-left: 300px;
-    flex: 1;
+    padding-right: 100px;
 }
 .findus-text {
     padding-top: 40px;
@@ -28,9 +28,6 @@ hr {
 .findus-text span {
     font-weight: 600;
 }
-.findus-img {
-    flex: 0.7;
-    background: no-repeat  center url(../images/kephas.png);
-    background-size: contain;
-    margin-right: 200px;
+.map {
+    padding-top: 30px;
 }

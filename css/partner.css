@@ -1,6 +1,7 @@
 .container {
     height: calc(100vh - 70px);
     margin-top: 70px;
+    /* background-color: #FCFFE7; */
 }
 .title {
     height: 200px;
@@ -15,26 +16,56 @@
     margin-left: 20px;
     color: rgb(26, 26, 112);
     font-weight: 600;
+    cursor: pointer;
+    pointer-events: auto;
 }
-.service.inner > hr {
-    border: 2px solid rgb(26, 26, 112);
-    margin-bottom: 40px;
+hr {
+    width: 100%;
+    border: 2px solid rgba(26, 26, 112);
 }
 .partner-wrap {
-    background-color: #000;
-    height: inherit;
     width: 100%;
+    height: inherit;
 }
-.partner-box > hr {
-    width: 40%;
-    border: 2px solid rgb(26, 26, 112);
+.partner-title {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
-.partner-logo-box {
-    width: 200px;
+.partner-title span {
+    width: 100%;
+    line-height: 80px;
+    border: 1px solid rgb(26, 26, 112);
+    background-color: rgb(250, 250, 255);
+}
+.partner-title span.active {
+    background-color: rgb(26, 26, 112);
+    color: #fff;
+}
+.partner-content-box {
+    width: 100%;
+    height: inherit;
+    background-color: rgb(26, 26, 112);
+    border-radius: 0 0 30px 30px;
+}
+.partner-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partner-img {
     height: 100px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box;
 }
-.partner-logo-box > img {
-    width: 200px;
-    height: 100px;
-    object-fit: fill;
+.partner-img img {
+    height: 80px;
 }

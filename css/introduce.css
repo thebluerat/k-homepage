@@ -1,3 +1,6 @@
+.container {
+    margin-bottom: 150px;
+}
 .slogan {
     background: no-repeat center center url("../images/valueback.jpg");
     background-size: cover;
@@ -93,8 +96,8 @@ hr {
     height: 50px;
     background-color:rgba(26, 26, 112);
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 150px;
+    bottom: 170px;
     font-size: 40px;
     line-height: 20px;
     text-align: center;
