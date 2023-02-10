@@ -51,6 +51,7 @@ hr {
     align-self:first baseline;
     background-image: url('../images/about.jpg');
     background-size: cover;
+    animation-name: ltr;
 }
 .ceo-text {
     background-color: #FCFFE7;
@@ -68,6 +69,7 @@ hr {
     align-self: first baseline;
     background-color: #FCFFE7;
     text-align: center;
+    animation-name: ltr;
 }
 .director-text > p {
     padding: 20px 40px 0px 30px;
@@ -92,8 +94,6 @@ hr {
     background-size: cover;
 }
 .gototop {
-    width: 50px;
-    height: 50px;
     background-color:rgba(26, 26, 112);
     position: fixed;
     right: 150px;
@@ -112,4 +112,34 @@ hr {
 }
 .gototop a {
     color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+/* animation */
+.ltr {
+    animation: ltr 0.5s linear both;
+}
+.rtl {
+    animation: rtl 0.5s linear both;
+}
+@keyframes ltr {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes rtl {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

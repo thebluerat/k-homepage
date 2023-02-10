@@ -8,6 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/introduce.css">
     <link rel="stylesheet" type="text/css" href="../css/custom.css">
+    <!-- WOW -->
+    <script src="../js/wow.min.js"></script>
     <title>회사 소개</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
         </div>
         <div class="ceo-greetings">
             <div class="inner">
-                <div class="ceo-img"></div>
-                <div class="ceo-text">
+                <div data-wow-offset="300" data-wow-duration="0.5s" class="ceo-img wow ltr"></div>
+                <div data-wow-offset="300" data-wow-duration="0.5s" class="ceo-text wow rtl">
                     <h1>CEO 인사말</h1>
                     <hr>
                     <p>
@@ -63,7 +65,7 @@
         </div>
         <div class="director-greetings">
             <div class="inner">
-                <div class="director-text">
+                <div data-wow-offset="300" data-wow-duration="0.5s" class="director-text wow ltr">
                     <h1>연구소장 인사말</h1>
                     <hr>
                     <p>
@@ -77,7 +79,7 @@
                     </p>
                     <a href="">자세히 보기  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="director-img"></div>
+                <div data-wow-offset="300" data-wow-duration="0.5s" class="director-img wow rtl"></div>
             </div>
         </div>
     </div>
@@ -87,6 +89,7 @@
     <script>
         $('.header-include').load('header.html');
         $('.footer-include').load('footer.html');
+        new WOW().init();
     </script>
 </body>
 </html>
