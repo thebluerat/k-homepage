@@ -32,7 +32,7 @@ $('.service-title span').click(function(){
 // introduce - TypeIt
 new TypeIt("#typing", {
     strings: "Kephas!",
-    speed: 50,
+    speed: 30,
     loop: false,
     waitUntilVisible: true,
   }).go();

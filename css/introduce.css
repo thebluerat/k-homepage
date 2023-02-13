@@ -26,7 +26,7 @@
     margin-top: 20vh;
     height: 50vh;
     text-align: center;
-    background-color: #eee;
+    background-color: #f3f3f3;
     line-height: 35px;
 }
 hr {
@@ -58,7 +58,7 @@ hr {
     animation-name: ltr;
 }
 .ceo-text {
-    background-color: #FCFFE7;
+    background: linear-gradient(#fcffe742, #EEE9DA);
     align-self:last baseline;
     text-align: center;
 }
@@ -71,7 +71,7 @@ hr {
 .director-text {
     box-sizing: border-box;
     align-self: first baseline;
-    background-color: #FCFFE7;
+    background: linear-gradient(#fcffe742, #EEE9DA);
     text-align: center;
     animation-name: ltr;
 }

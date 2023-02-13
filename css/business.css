@@ -34,6 +34,7 @@ hr {
     height: 70%;
     width: 20%;
     text-align: center;
+    box-shadow: 10px 10px 50px #eee;
 }
 .business-content-box:nth-child(2n) {
     margin-top: 70px;
@@ -55,13 +56,15 @@ hr {
     height: 100px;
     font-size: 24px;
     line-height: 100px;
+    border-radius: 5px 5px 0 0;
 }
 .vertical {
-    border-left: thick dotted rgb(26, 26, 112);
+    border-left: thick dotted rgba(26, 26, 112, 0.212);
     height: 50px;
 }
 .business-content {
-    background-color: #eee;
+    background-color: #f3f3f3;
     height: 60%;
     padding: 20px;
+    border-radius: 0 0 5px 5px;
 }
