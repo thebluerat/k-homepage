@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-family: 'Noto Sans KR', 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
 }
 ul {
     padding: 0;

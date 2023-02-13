@@ -18,13 +18,16 @@
 }
 .slogan-text > span {
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     mix-blend-mode: exclusion;
 }
 .about {
     padding-top: 80px;
+    margin-top: 20vh;
     height: 50vh;
     text-align: center;
+    background-color: #eee;
+    line-height: 35px;
 }
 hr {
     width: 80%;
@@ -36,6 +39,7 @@ hr {
 .ceo-greetings, .director-greetings {
     width: 100%;
     height: 80vh;
+    margin-top: 20vh;
 }
 .ceo-greetings > .inner, .director-greetings > .inner {
     display: flex;
@@ -45,7 +49,7 @@ hr {
 }
 .ceo-img, .ceo-text, .director-img, .director-text {
     width: 640px;
-    height: 600px;
+    height: 650px;
 }
 .ceo-img {
     align-self:first baseline;
