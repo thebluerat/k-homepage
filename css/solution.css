@@ -1,0 +1,85 @@
+.container {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content:left;
+}
+.title > h1, .title > span {
+    align-self: last baseline;
+}
+.title > span {
+    margin-left: 20px;
+    color: rgb(26, 26, 112);
+    font-weight: 600;
+}
+hr {
+    border: 2px solid rgb(26, 26, 112);
+    margin-bottom: 40px;
+}
+.solution-content-box {
+    display: flex;
+    justify-content: space-between;
+}
+.solution-content {
+    width: 280px;
+    height: 400px;
+    border: 2px solid rgb(26, 26, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.solution-content:nth-child(1) {
+    background: no-repeat center url(../images/big2core.png);
+    background-size: cover;
+}
+.solution-content:nth-child(2) {
+    background: no-repeat center url(../images/inzent.png);
+    background-size: cover;
+}
+.solution-content:nth-child(3) {
+    background: no-repeat center url(../images/bimatrix.png);
+    background-size: cover;
+}
+.solution-content:nth-child(4) {
+    background: no-repeat center url(../images/kephas.png);
+    background-size: contain;
+}
+.solution-text {
+    /* display: none; */
+    width: 270px;
+    height: 390px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    position: absolute;
+    bottom: -305px;
+    transition: 0.2s; 
+}
+.solution-text h2 {
+    margin: 0;
+    line-height: 60px;
+    display: flex;
+}
+.solution-text h2 img {
+    height: 50px;
+    margin-right: 20px;
+}
+.solution-text > span {
+    display: block;
+}
+.solution-text i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+}
+.solution-content:hover .solution-text{
+    bottom: 5px;
+}

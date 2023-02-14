@@ -1,0 +1,158 @@
+.container {
+    margin-bottom: 150px;
+}
+.slogan {
+    background: no-repeat center center url("../images/valueback.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-top: 80px;
+}
+.slogan-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px;
+}
+.slogan-text > span {
+    display: block;
+    font-size: 3em;
+    mix-blend-mode: exclusion;
+}
+.about {
+    margin-top: 20vh;
+    height: 55vh;
+    text-align: center;
+    background-color: #f5f4f4;
+    line-height: 35px;
+}
+.about > .inner {
+    padding: 80px 0;
+    border-radius: 30px;
+    background-color: #fff;
+    background: linear-gradient(145deg, #ffffff, rgba(0, 0, 255, 0.103));
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+hr {
+    width: 80px;
+    border: 2px solid rgba(26, 26, 112);
+}
+.about > p {
+    margin-top: 50px;
+}
+.ceo-greetings, .director-greetings {
+    width: 100%;
+    height: 80vh;
+    margin-top: 20vh;
+}
+.ceo-greetings > .inner, .director-greetings > .inner {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 100%;
+    justify-content: space-between;
+}
+.ceo-img, .ceo-text, .director-img, .director-text {
+    width: 600px;
+    height: 650px;
+    background: linear-gradient(145deg, #ffffff, #EEE9DA);
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+.ceo-img {
+    align-self:first baseline;
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+    animation-name: ltr;
+}
+.ceo-text {
+    align-self:last baseline;
+    text-align: center;
+}
+.ceo-text > p {
+    padding-top: 20px;
+}
+.director-greetings {
+    padding-bottom: 50px;
+}
+.director-text {
+    box-sizing: border-box;
+    align-self: first baseline;
+    text-align: center;
+    animation-name: ltr;
+}
+.director-text > p {
+    padding: 20px 40px 0px 30px;
+}
+.director-text > a {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(26, 26, 112);
+    color: white;
+    transition: 0.3s;
+}
+.director-text > a:hover {
+    background-color: rgba(26, 26, 112, 0);
+    color: rgba(26, 26, 112);
+    border-bottom: 2px solid rgba(26, 26, 112);
+    font-weight: 600;
+}
+.director-img {
+    align-self: last baseline;
+    background: center center url('../images/lab.jpg');
+    background-size: cover;
+}
+.gototop {
+    background-color:rgba(26, 26, 112);
+    position: fixed;
+    right: 150px;
+    bottom: 170px;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.gototop.active {
+    visibility: visible;
+    opacity: 1;
+}
+.gototop a {
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+/* animation */
+.ltr {
+    animation: ltr 0.5s linear both;
+}
+.rtl {
+    animation: rtl 0.5s linear both;
+}
+@keyframes ltr {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes rtl {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

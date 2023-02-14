@@ -1,0 +1,18 @@
+.container {
+    background-image: url("../images/mainimg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.title {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    /* mix-blend-mode: color-burn; */
+}
+.title .inner > h1 {
+    font-size: 4em;
+}
+.title .inner > span {
+    font-size: 1.5em;
+    display: block;
+}

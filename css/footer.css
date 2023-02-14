@@ -1,0 +1,23 @@
+footer {
+    position: sticky;
+    bottom: 0;
+    height: 150px;
+    background-color: rgba(26, 26, 112);
+    width: 100%;
+    color: #eee;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+footer .inner {
+    display: flex;
+}
+.footer-logo {
+    flex: 1;
+    filter: grayscale(100%);
+}
+.footer-info {
+    flex: 2;
+}
+.footer-info span {
+    display: block;
+}

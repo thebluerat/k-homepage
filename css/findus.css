@@ -1,0 +1,46 @@
+.container {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.title h1 {
+    align-self: last baseline;
+}
+hr {
+    width: 80%;
+    border: 2px solid rgba(26, 26, 112);
+}
+.findus-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.findus-text-box {
+    margin-right: 20px;
+}
+.findus-text-box, .map {
+    padding: 0 30px;
+    background: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.findus-text {
+    padding: 40px 0;
+}
+.findus-text span {
+    font-weight: 600;
+}
+.map {
+    padding-top: 30px;
+    width: 500px;
+}
+.map img {
+    width: 160px;
+    display: block;
+    float: right;
+    margin-top: 20px;
+}
