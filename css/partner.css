@@ -24,29 +24,32 @@ hr {
 }
 .partner-wrap {
     width: 100%;
-    height: 60vh;
+    height: inherit;
+    display: flex;
+    text-align: center;
 }
 .partner-content-box {
-    width: 100%;
-    height: 170px;
-    display: flex;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.partner-content-box:last-child {
-    height: 330px;
-}
-.partner-content {
-    border: 1px solid #ddd;
-    width: 100%;
-    text-align: center;
-    display: block!important;
+    width: 20%;
 }
 .partner-title {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    background-color: #f3f3f3;
+    margin: 10px 0;
 }
-.partner-img img{
-    width: 120px;
+.partner-content {
+    display: block!important;
 }
+.partner-img {
+    border: 1px solid #ece9e9;
+    height: 90px;
+    border-radius: 20px;
+    line-height: 130px;
+}
+.partner-img img {
+    width: 150px;
+}
+.partner-img.small img {
+    width: 200px;
+}
+.partner-img.big img {
+    width: 100px;
+}
+
