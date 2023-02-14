@@ -57,7 +57,7 @@ nav {
     margin: 0 -640px;
 }
 .menu > li:last-child > .submenu {
-    right: -200px;
-    padding: 0 200px;
-    margin: 0 -200px;
+    right: -640px;
+    padding: 0 640px;
+    margin: 0 -640px;
 }

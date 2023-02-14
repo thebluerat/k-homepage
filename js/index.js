@@ -23,7 +23,7 @@ $('.partner-title span').click(function(){
 });
 // service - tab
 $('.service-content').hide().eq(0).show();
-$('.service-title span').click(function(){
+$('.service-title a').click(function(){
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
     $('.service-content').fadeOut();
@@ -35,4 +35,7 @@ new TypeIt("#typing", {
     speed: 30,
     loop: false,
     waitUntilVisible: true,
+    afterComplete: function (instance) {
+        instance.destroy();
+    }
   }).go();
