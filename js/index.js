@@ -5,6 +5,16 @@ $(".menu > li").mouseenter(function(){
 $(".menu> li").mouseleave(function(){
     $(".submenu").stop().slideUp(100);
 })
+// header - menu-btn
+$('.menu-btn').click(function(){
+    $(this).toggleClass('active');
+    $('.menu').toggleClass('on');
+})
+// header - mobile
+$("nav > .menu > li > .submenu").hide();
+$("nav > .menu > li").click(function(){
+    $(".menu > li > .submenu").slideToggle("fast");
+})
 // gototop
 $(window).scroll(function(){
 	if ($(this).scrollTop() > 300){

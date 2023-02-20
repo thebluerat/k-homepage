@@ -40,7 +40,7 @@ nav {
     border-bottom: 2px solid rgb(26, 26, 112);
 }
 .menu > li:hover > .submenu {
-    background-color: #eee;
+    background-color: #f8f8f8;
 }
 .submenu {
     background-color: #fff;
@@ -60,4 +60,86 @@ nav {
     right: -640px;
     padding: 0 640px;
     margin: 0 -640px;
+}
+.menu-btn {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+    .inner {
+        width: 100%;
+    }
+    nav {
+        position: relative;
+        align-items: stretch;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu.on {
+        display: flex;
+    }
+    .menu > li > a {
+        display: block;
+        margin: 0;
+    }
+    .menu > li:first-child > .submenu {
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .menu > li:last-child > .submenu {
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .submenu {
+        display: none;
+        height: auto;
+    }
+    .menu-btn {
+        width: 35px;
+        height: 25px;
+        position: absolute;
+        right: 17px;
+        top: 17px;
+        display: block;
+        cursor: pointer;
+    }
+    .menu-btn span {
+        background-color: #000;
+        height: 1px;
+        position: absolute;
+        width: 100%;
+        transition: 0.2s;
+    }
+    .menu-btn span:nth-child(1) {
+        top: 0;
+    }
+    .menu-btn span:nth-child(2) {
+        top: 50%;
+    }
+    .menu-btn span:nth-child(3) {
+        top: 100%;
+    }
+    .menu-btn.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-btn.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
 }

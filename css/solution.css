@@ -83,3 +83,12 @@ hr {
 .solution-content:hover .solution-text{
     bottom: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: inherit;
+    }
+    .title {
+        height: 50px;
+    }
+}

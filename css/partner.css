@@ -33,6 +33,12 @@ hr {
 }
 .partner-title {
     margin: 10px 0;
+    height: 50px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    box-shadow: 5px 5px 15px #e2e2e2,
+             -5px -5px 15px #ffffff;
+    line-height: 50px;
 }
 .partner-content {
     display: block!important;
@@ -42,6 +48,8 @@ hr {
     height: 90px;
     border-radius: 20px;
     line-height: 130px;
+    box-shadow: 2px 2px 7px #e2e2e2,
+             -2px -2px 7px #ffffff;
 }
 .partner-img img {
     width: 150px;
@@ -52,4 +60,56 @@ hr {
 .partner-img.big img {
     width: 100px;
 }
+.partner-img.down img {
+    margin-top: 10px;
+}
 
+@media screen and (max-width: 768px) {
+    .container {
+        height: inherit;
+        margin-top: 90px;
+        padding: 10px;
+    }
+    .title {
+        height: 100px;
+    }
+    .title > h1 {
+        font-size: 28px;
+    }
+    .title > h1, .title > span {
+        align-self: last baseline;
+    }
+    .partner.inner {
+        width: 100%;
+    }
+    .partner-wrap {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .partner-content-box {
+        width: 90%;
+    }
+    .partner-title {
+        margin-top: 40px;
+    }
+    .partner-content {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .partner-img {
+        width: 48%;
+    }
+    .partner-img img {
+        width: 90%;
+    }
+    .partner-img.big img {
+        width: 100%;
+    }
+    .partner-img.narrow img {
+        width: 98%;
+    }
+    .partner-img.smallsmall img {
+        width: 80%;
+    }
+}

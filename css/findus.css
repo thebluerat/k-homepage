@@ -18,16 +18,29 @@ hr {
 .findus-info {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 .findus-text-box {
-    padding-right: 100px;
+    margin-right: 20px;
+}
+.findus-text-box, .map {
+    padding: 0 30px;
+    background: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .findus-text {
-    padding-top: 40px;
+    padding: 40px 0;
 }
 .findus-text span {
     font-weight: 600;
 }
 .map {
     padding-top: 30px;
+    width: 500px;
+}
+.map img {
+    width: 160px;
+    display: block;
+    float: right;
+    margin-top: 20px;
 }
