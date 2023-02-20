@@ -51,7 +51,6 @@ hr {
     background-size: contain;
 }
 .solution-text {
-    /* display: none; */
     width: 270px;
     height: 390px;
     background-color: #fff;
@@ -87,8 +86,36 @@ hr {
 @media screen and (max-width: 768px) {
     .container {
         height: inherit;
+        margin-top: 90px;
+        padding: 10px;
     }
     .title {
-        height: 50px;
+        height: 100px;
+    }
+    .title > h1 {
+        font-size: 28px;
+        width: 110px;
+    }
+    .title > span {
+        font-size: 0.8rem;
+    }
+    .title > h1, .title > span {
+        align-self: last baseline;
+    }
+    .solution.inner {
+        width: 100%;
+    }
+    .solution-content-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .solution-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .solution-text {
+        width: 95%;
+        bottom: 2%;
+        background-color: #fffffff6;
     }
 }
