@@ -44,3 +44,45 @@ hr {
     float: right;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: inherit;
+        margin-top: 90px;
+        padding: 10px;
+    }
+    .title {
+        height: 100px;
+    }
+    .title > h1 {
+        font-size: 28px;
+        width: 110px;
+    }
+    .title > span {
+        font-size: 0.8rem;
+    }
+    .title > h1, .title > span {
+        align-self: last baseline;
+    }
+    .findus.inner {
+        width: 100%;
+    }
+    .findus-info {
+        flex-wrap: wrap;
+    }
+    .findus-text-box {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .findus-text {
+        padding: 10px 0;
+    }
+    .map {
+        width: 100%;
+        height: 450px;
+    }
+    .map img {
+        margin-top: 10px;
+    }
+}
