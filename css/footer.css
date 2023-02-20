@@ -21,3 +21,18 @@ footer .inner {
 .footer-info span {
     display: block;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 250px;
+    }
+    footer .inner {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer-info span {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
