@@ -75,6 +75,10 @@ hr {
     }
     .title > h1 {
         font-size: 28px;
+        width: 110px;
+    }
+    .title > span {
+        font-size: 0.8rem;
     }
     .title > h1, .title > span {
         align-self: last baseline;

@@ -89,3 +89,53 @@ hr {
     width: var(--size);
     height: var(--size);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: inherit;
+        margin-top: 90px;
+        padding: 10px;
+    }
+    .title {
+        height: 100px;
+    }
+    .title > h1 {
+        font-size: 28px;
+        width: 110px;
+    }
+    .title > span {
+        font-size: 0.8rem;
+    }
+    .title > h1, .title > span {
+        align-self: last baseline;
+    }
+    .business.inner {
+        width: 100%;
+    }
+    .business-wrap {
+        height: inherit;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .card {
+        width: 45%;
+        margin-top: 20px;
+    }
+    .card-info {
+        width: 48%;
+        gap: 0;
+        padding: 0;
+    }
+    .card-img {
+        --size: 110px;
+    }
+    .text-title {
+        line-height: 80px;
+    }
+    .text-body {
+        display: block;
+        width: 150%;
+        margin: 0;
+        height: 300px;
+    }
+}
