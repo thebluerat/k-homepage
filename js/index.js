@@ -1,20 +1,15 @@
-// header
-if (matchMedia("screen and (max-width: 768px)").matches) {
-    $(".menu > li").on("click", function(){
-        $(this).children(".submenu").stop().slideDown();
-    });
-} else {
-    $(".menu > li").mouseenter(function(){
+// header 
+$(".menu > li").mouseenter(function(){
         $(".submenu").stop().slideDown(400);
     })
     $(".menu> li").mouseleave(function(){
         $(".submenu").stop().slideUp(100);
     })
-}
 // header - menu-btn
 $('.menu-btn').click(function(){
     $(this).toggleClass('active');
-    $('.menu').toggleClass('on');
+    $('.menu, header').toggleClass('on');
+
 })
 // header - mobile
 $("nav > .menu > li > .submenu").hide();
@@ -55,3 +50,6 @@ new TypeIt("#typing", {
         instance.destroy();
     }
   }).go();
+
+
+  

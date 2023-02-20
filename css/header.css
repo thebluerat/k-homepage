@@ -69,12 +69,15 @@ nav {
     header {
         height: auto;
     }
+    header.on {
+        position: absolute;
+    }
     header > .inner {
         width: 100%;
     }
     nav {
         flex-direction: column;
-        height: inherit;
+        height: auto;
     }
     .menu {
         flex-direction: column;
@@ -100,12 +103,28 @@ nav {
         padding: 0;
         margin: 0;
     }
-    .submenu {
+    .menu > li:nth-child(1) {
+        height: 350px;
+    }
+    .menu > li:nth-child(2) {
+        
+    }
+    .menu > li:nth-child(3) {
+        height: 280px;
+    }
+    .menu > li:nth-child(4) {
+        height: 210px;
+    }
+    .menu > li:nth-child(5) {
+        
+    }
+    li > .submenu {
         height: auto;
         background-color: #f2f2f2;
         position: absolute;
         z-index: 100;
         top: 70px;
+        display: block!important;
     }
     .submenu > li > a {
         height: 70px;
