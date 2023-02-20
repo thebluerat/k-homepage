@@ -7,7 +7,6 @@
     display: flex;
     height: calc(100vh - 70px);
     align-items: center;
-    /* mix-blend-mode: color-burn; */
 }
 .title .inner > h1 {
     font-size: 4em;
@@ -15,4 +14,30 @@
 .title .inner > span {
     font-size: 1.5em;
     display: block;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        background-position: center center;
+        background-repeat: no-repeat;background-attachment: fixed;background-size: cover;
+        padding: 20px;
+    }
+    .title .inner {
+        width: 100%;
+        padding: 10px;
+    }
+    .title .inner > h1 {
+        margin: 0;
+        line-height: 1em;
+    }
+    h1, span {
+        background-color: #dcfaffd2;
+        mix-blend-mode: luminosity;
+    }
+    .title .inner > span {
+        font-size: 1.2em;
+    }
+    span {
+        padding: 10px 0;
+    }
+    
 }
