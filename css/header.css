@@ -69,28 +69,18 @@ nav {
     header {
         height: auto;
     }
-    .inner {
+    header > .inner {
         width: 100%;
     }
     nav {
-        position: relative;
-        align-items: stretch;
-    }
-    .logo {
-        padding: 10px;
+        flex-direction: column;
     }
     .menu {
         flex-direction: column;
-        text-align: center;
+    }
+    .menu > li {
         width: 100%;
-        display: none;
-    }
-    .menu.on {
-        display: flex;
-    }
-    .menu > li > a {
-        display: block;
-        margin: 0;
+        border-bottom : 1px solid #f2f2f2;
     }
     .menu > li:first-child > .submenu {
         left: 0;
@@ -103,8 +93,8 @@ nav {
         margin: 0;
     }
     .submenu {
-        display: none;
         height: auto;
+        background-color: #f2f2f2;
     }
     .menu-btn {
         width: 35px;

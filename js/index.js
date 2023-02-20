@@ -1,15 +1,20 @@
 // header
-$(".menu > li").mouseenter(function(){
-    $(".submenu").stop().slideDown(400);
-})
-$(".menu> li").mouseleave(function(){
-    $(".submenu").stop().slideUp(100);
-})
+if (matchMedia("screen and (max-width: 768px)").matches) {
+    $("nav > .menu > li > .submenu").hide();
+    $("nav > .menu > li").click(function(){
+        $(this).find(".submenu").slideToggle("fast");
+    });
+} else {
+    $(".menu > li").mouseenter(function(){
+        $(".submenu").stop().slideDown(400);
+    })
+    $(".menu> li").mouseleave(function(){
+        $(".submenu").stop().slideUp(100);
+    })
+}
+
 // header - menu-btn
-$('.menu-btn').click(function(){
-    $(this).toggleClass('active');
-    $('.menu').toggleClass('on');
-})
+
 // header - mobile
 $("nav > .menu > li > .submenu").hide();
 $("nav > .menu > li").click(function(){
