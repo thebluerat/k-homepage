@@ -61,8 +61,8 @@ nav {
     padding: 0 640px;
     margin: 0 -640px;
 }
-.menu-btn {
-    display: block;
+.menu-btn{
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -74,13 +74,21 @@ nav {
     }
     nav {
         flex-direction: column;
+        height: inherit;
     }
     .menu {
         flex-direction: column;
+        position: auto;
+        display: none;
+    }
+    .menu.on {
+        display: block;
     }
     .menu > li {
         width: 100%;
         border-bottom : 1px solid #f2f2f2;
+        height: 70px;
+        position: relative;
     }
     .menu > li:first-child > .submenu {
         left: 0;
@@ -95,8 +103,15 @@ nav {
     .submenu {
         height: auto;
         background-color: #f2f2f2;
+        position: absolute;
+        z-index: 100;
+        top: 70px;
     }
-    .menu-btn {
+    .submenu > li > a {
+        height: 70px;
+        display: block;
+    }
+    .menu-btn{
         width: 35px;
         height: 25px;
         position: absolute;
@@ -104,6 +119,7 @@ nav {
         top: 17px;
         display: block;
         cursor: pointer;
+        margin-top: 5px;
     }
     .menu-btn span {
         background-color: #000;

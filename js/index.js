@@ -1,8 +1,7 @@
 // header
 if (matchMedia("screen and (max-width: 768px)").matches) {
-    $("nav > .menu > li > .submenu").hide();
-    $("nav > .menu > li").click(function(){
-        $(this).find(".submenu").slideToggle("fast");
+    $(".menu > li").on("click", function(){
+        $(this).children(".submenu").stop().slideDown();
     });
 } else {
     $(".menu > li").mouseenter(function(){
@@ -12,9 +11,11 @@ if (matchMedia("screen and (max-width: 768px)").matches) {
         $(".submenu").stop().slideUp(100);
     })
 }
-
 // header - menu-btn
-
+$('.menu-btn').click(function(){
+    $(this).toggleClass('active');
+    $('.menu').toggleClass('on');
+})
 // header - mobile
 $("nav > .menu > li > .submenu").hide();
 $("nav > .menu > li").click(function(){
