@@ -1,14 +1,21 @@
 // header 
-$(".menu > li").mouseenter(function(){
+if (matchMedia("screen and (max-width: 768px)").matches) {
+    $('.menu > li > i').click(function(){
+        $(this).parent().toggleClass('active');
+        $(this).parent().siblings().removeClass('active');
+    })
+} else {
+    $(".menu > li").mouseenter(function(){
         $(".submenu").stop().slideDown(400);
     })
     $(".menu> li").mouseleave(function(){
         $(".submenu").stop().slideUp(100);
     })
+} 
 // header - menu-btn
 $('.menu-btn').click(function(){
     $(this).toggleClass('active');
-    $('.menu, header').toggleClass('on');
+    $('.menu').toggleClass('on');
 
 })
 // header - mobile

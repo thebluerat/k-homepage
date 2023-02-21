@@ -1,3 +1,5 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 header {
     height: 70px;
     border-bottom: 1px solid #eee;
@@ -34,6 +36,10 @@ nav {
     line-height: 70px;
     text-align: center;
 }
+.menu > li > i {
+    visibility: hidden;
+    opacity: 0;
+}
 .menu > li:hover > a, .submenu > li:hover > a {
     font-weight: 600;
     color: rgb(26, 26, 112);
@@ -69,15 +75,15 @@ nav {
     header {
         height: auto;
     }
-    header.on {
-        position: absolute;
-    }
     header > .inner {
         width: 100%;
     }
     nav {
         flex-direction: column;
         height: auto;
+    }
+    .logo {
+        margin-left: 20px;
     }
     .menu {
         flex-direction: column;
@@ -92,7 +98,21 @@ nav {
         border-bottom : 1px solid #f2f2f2;
         height: 70px;
         position: relative;
+        overflow: hidden;
     }
+    .menu > li > i {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+    /* .menu > li::after {
+        font-family: 'FontAwesome';
+        content: '\f0d7';
+        position: absolute;
+        right: 30px;
+    } */
     .menu > li:first-child > .submenu {
         left: 0;
         padding: 0;
@@ -103,19 +123,19 @@ nav {
         padding: 0;
         margin: 0;
     }
-    .menu > li:nth-child(1) {
+    .menu > li.active:nth-child(1) {
         height: 350px;
     }
-    .menu > li:nth-child(2) {
-        
+    .menu > li.active:nth-child(2) {
+        height: 140px;
     }
-    .menu > li:nth-child(3) {
+    .menu > li.active:nth-child(3) {
         height: 280px;
     }
-    .menu > li:nth-child(4) {
+    .menu > li.active:nth-child(4) {
         height: 210px;
     }
-    .menu > li:nth-child(5) {
+    .menu > li.active:nth-child(5) {
         
     }
     li > .submenu {
