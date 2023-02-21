@@ -8,7 +8,6 @@ header {
     width: 100%;
     background-color: #fff;
     z-index: 100;
-    overflow: hidden;
 }
 .inner {
     width: 1280px;
@@ -23,6 +22,9 @@ nav {
 .logo {
     font-weight: 600;
     flex: 1;
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
 }
 .logo > a {
     color: rgb(26, 26, 112);
