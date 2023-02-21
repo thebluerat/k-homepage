@@ -87,7 +87,6 @@ hr {
     .container {
         height: inherit;
         margin-top: 90px;
-        padding: 10px;
     }
     .title {
         height: 100px;
@@ -104,6 +103,8 @@ hr {
     }
     .solution.inner {
         width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
     }
     .solution-content-box {
         flex-direction: column;

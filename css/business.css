@@ -94,7 +94,6 @@ hr {
     .container {
         height: inherit;
         margin-top: 90px;
-        padding: 10px;
     }
     .title {
         height: 100px;
@@ -111,6 +110,8 @@ hr {
     }
     .business.inner {
         width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
     }
     .business-wrap {
         height: inherit;

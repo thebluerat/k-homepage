@@ -87,7 +87,6 @@ nav {
     }
     .menu {
         flex-direction: column;
-        position: auto;
         display: none;
     }
     .menu.on {
@@ -107,12 +106,6 @@ nav {
         right: 25px;
         top: 25px;
     }
-    /* .menu > li::after {
-        font-family: 'FontAwesome';
-        content: '\f0d7';
-        position: absolute;
-        right: 30px;
-    } */
     .menu > li:first-child > .submenu {
         left: 0;
         padding: 0;
