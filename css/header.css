@@ -39,6 +39,7 @@ nav {
 .menu > li > i {
     visibility: hidden;
     opacity: 0;
+    width: 0;
 }
 .menu > li:hover > a, .submenu > li:hover > a {
     font-weight: 600;
@@ -103,8 +104,15 @@ nav {
         visibility: visible;
         opacity: 1;
         position: absolute;
-        right: 25px;
-        top: 25px;
+        right: 15px;
+        top: 0px;
+        display: block;
+        width: 70px;
+        height: 70px;
+        line-height: 70px; 
+        cursor: pointer;
+        background-color: #f2f2f2;
+        border-radius: 50%;
     }
     .menu > li:first-child > .submenu {
         left: 0;
