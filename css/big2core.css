@@ -16,12 +16,17 @@ h3 {
     margin: 30px 0;
     font-size: 36px;
     justify-self: center;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .wrap {
     border: 20px solid #57b3ff;
     width: 100%;
     box-sizing: border-box;
     height: inherit;
+    margin-top: 140px;
 }
 .wrap2 {
     border: 7px solid #fff;
@@ -49,7 +54,7 @@ h3 {
     position: relative;
 }
 .prob-text div {
-    border: 5px solid #FFAD02;
+    /* border: 5px solid #FFAD02; */
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -108,4 +113,53 @@ h3 {
     width: 100%;
     height: 100%;
     line-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .big2core.inner {
+        width: 100%;
+        font-size: 18px;
+    }
+    .wrap {
+        border: 15px solid #57b3ff;
+    }
+    .prob-content {
+        width: 90%;
+        flex-direction: column;
+        height: inherit;
+    }
+    .prob-content > img {
+        transform: rotate( 90deg );
+    }
+    .prob-text {
+        width: 100%;
+        padding: 5px;
+        height: 150px;
+    }
+    .prob-text div {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border: none;
+    }
+    .prob-img {
+        width: 100%;
+        height: auto;
+    }
+    .sol-content {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .sol-content2 {
+        height: 800px;
+    }
+    .sol-content p, .sol-content2 p {
+        height: auto;
+    }
+    .sol-content img:not(:first-of-type), .sol-content2 img:not(:first-of-type) {
+        display: none;
+    }
+    .go-big2core {
+        width: 80%;
+    }
 }
