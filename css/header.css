@@ -8,6 +8,7 @@ header {
     width: 100%;
     background-color: #fff;
     z-index: 100;
+    overflow: hidden;
 }
 .inner {
     width: 1280px;
@@ -17,14 +18,18 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 .logo {
-    line-height: 70px;
     font-weight: 600;
     flex: 1;
 }
 .logo > a {
     color: rgb(26, 26, 112);
+}
+.logo img {
+    height: 70px;
+    margin-top: 8px;
 }
 .menu {
     display: flex;
@@ -85,6 +90,10 @@ nav {
     }
     .logo {
         margin-left: 20px;
+    }
+    .logo img {
+        height: 50px;
+        margin-top: 20px;
     }
     .menu {
         flex-direction: column;
