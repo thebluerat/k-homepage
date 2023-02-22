@@ -29,3 +29,41 @@ a {
     width: 1280px;
     margin: 0 auto;
 }
+.gototop {
+    background-color:rgba(26, 26, 112);
+    position: fixed;
+    right: 150px;
+    bottom: 170px;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.gototop.active {
+    visibility: visible;
+    opacity: 1;
+}
+.gototop a {
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 768px) {
+    .gototop {
+        position: fixed;
+        right: 50px;
+        bottom: 100px;
+        background-color: rgb(128, 114, 52);
+        font-size: 40px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+}

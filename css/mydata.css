@@ -1,0 +1,53 @@
+.container {
+    height: calc(100vh - 220px);
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    margin-top: 70px;
+}
+.mydata.inner {
+    text-align: center;
+}
+.wrap {
+    display: flex;
+    justify-content: center
+}
+.mydata-text {
+    width: 60%;
+    padding: 80px 0;
+}
+.mydata-text > h1 {
+    font-size: 48px;
+}
+.mydata-text-box {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.text-box {
+    width: 12%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: inherit;
+    }
+    .mydata.inner {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .mydata-text {
+        width: 100%;
+    }
+    .mydata-text > h1 {
+        font-size: 40px;
+    }
+    .mydata-text-box {
+        flex-wrap: wrap;
+    }
+    .text-box {
+        width: 100%;
+        padding: 10px;
+    }
+}
