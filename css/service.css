@@ -2,24 +2,7 @@
     height: calc(100vh - 70px);
     margin-top: 70px;
 }
-.title {
-    height: 200px;
-    display: flex;
-    width: 100%;
-    justify-content:left;
-}
-.title > h1, .title > span {
-    align-self: last baseline;
-}
-.title > span {
-    margin-left: 20px;
-    color: rgb(26, 26, 112);
-    font-weight: 600;
-}
-hr {
-    border: 2px solid rgb(26, 26, 112);
-    margin-bottom: 40px;
-}
+
 .service-wrap {
     width: 100%;
     height: inherit;

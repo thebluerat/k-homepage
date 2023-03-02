@@ -13,11 +13,11 @@
 }
 .title > span {
     margin-left: 20px;
-    color: rgb(26, 26, 112);
+    color: #0009a0;
     font-weight: 600;
 }
 hr {
-    border: 2px solid rgb(26, 26, 112);
+    border: 2px solid #0009a0;
     margin-bottom: 40px;
 }
 .solution-content-box {
@@ -27,7 +27,7 @@ hr {
 .solution-content {
     width: 280px;
     height: 400px;
-    border: 2px solid rgb(26, 26, 112);
+    border: 2px solid #0009a0;
     display: flex;
     justify-content: center;
     align-items: center;

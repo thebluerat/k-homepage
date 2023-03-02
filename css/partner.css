@@ -13,14 +13,14 @@
 }
 .title > span {
     margin-left: 20px;
-    color: rgb(26, 26, 112);
+    color: #0009A0;
     font-weight: 600;
     cursor: pointer;
     pointer-events: auto;
 }
 hr {
     width: 100%;
-    border: 2px solid rgba(26, 26, 112);
+    border: 2px solid #0009A0;
 }
 .partner-wrap {
     width: 100%;

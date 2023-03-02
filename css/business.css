@@ -2,25 +2,9 @@
     height: calc(100vh - 70px);
     margin-top: 70px;
 }
-.title {
-    height: 200px;
-    display: flex;
+.business.inner hr {
     width: 100%;
-    justify-content:left;
-}
-.title > h1, .title > span {
-    align-self: last baseline;
-}
-.title > span {
-    margin-left: 20px;
-    color: rgb(26, 26, 112);
-    font-weight: 600;
-    cursor: pointer;
-    pointer-events: auto;
-}
-hr {
-    width: 100%;
-    border: 2px solid rgba(26, 26, 112);
+    border: 2px solid #0009A0;
     margin-bottom: 70px;
 }
 .business-wrap {
@@ -57,8 +41,8 @@ hr {
     height: var(--size);
     border-radius: 50%;
     transform: translateY(-50%);
-    background: #42caff;
-    background: linear-gradient(to bottom, #cef1ff 0%, #b6bbff 100%);
+    background: #e6e7ff;
+    background: linear-gradient(to bottom, #cccfff 0%, #e6e7ff 100%);
     position: relative;
     transition: all .3s ease-in-out;
     text-align: center;

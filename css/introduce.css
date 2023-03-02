@@ -38,7 +38,7 @@
 }
 hr {
     width: 80px;
-    border: 2px solid rgba(26, 26, 112);
+    border: 2px solid #0009A0;
 }
 .about > p {
     margin-top: 50px;
@@ -58,7 +58,7 @@ hr {
 .ceo-img, .ceo-text, .director-img, .director-text {
     width: 600px;
     height: 650px;
-    background: linear-gradient(145deg, #ffffff, #EEE9DA);
+    background: linear-gradient(145deg, #ffffff, #e6e7ff);
     box-shadow:  20px 20px 60px #d9d9d9,
              -20px -20px 60px #ffffff;
 }
@@ -91,14 +91,14 @@ hr {
     display: block;
     margin-top: 20px;
     padding: 20px;
-    background-color: rgba(26, 26, 112);
+    background-color: #0009A0;
     color: white;
     transition: 0.3s;
 }
 .director-text > a:hover {
     background-color: rgba(26, 26, 112, 0);
     color: rgba(26, 26, 112);
-    border-bottom: 2px solid rgba(26, 26, 112);
+    border-bottom: 2px solid #0009A0;
     font-weight: 600;
 }
 .director-img {

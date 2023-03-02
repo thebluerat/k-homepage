@@ -29,8 +29,26 @@ a {
     width: 1280px;
     margin: 0 auto;
 }
+.title {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content:left;
+}
+.title > h1, .title > span {
+    align-self: last baseline;
+}
+.title > span {
+    margin-left: 20px;
+    color: #0009a0;
+    font-weight: 600;
+}
+hr {
+    border: 2px solid #0009a0;
+    margin-bottom: 40px;
+}
 .gototop {
-    background-color:rgba(26, 26, 112);
+    background-color:#000dff;
     position: fixed;
     right: 150px;
     bottom: 170px;
@@ -57,7 +75,7 @@ a {
         position: fixed;
         right: 50px;
         bottom: 100px;
-        background-color: rgb(128, 114, 52);
+        background-color: #779e00;
         font-size: 40px;
         line-height: 20px;
         text-align: center;

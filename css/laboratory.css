@@ -1,5 +1,5 @@
 .container {
-    background: linear-gradient(to right, rgba(55, 55, 192, 0.377), rgba(57, 57, 224, 0.39)), url('../images/lab-main.jpg');
+    background: linear-gradient(to right, #000acc3f, #00056641), url('../images/lab-main.jpg');
     background-size: cover;
     height: calc(100vh - 70px);
     margin-top: 70px;
@@ -8,7 +8,7 @@
     text-align: center;
     color: #fff;
 }
-.title {
+.laboratory.inner .title {
     height: 200px;
     display: flex;
     width: 100%;
@@ -27,7 +27,7 @@
 .about-lab-text {
     width: 380px;
     height: 350px;
-    background: #1b3353;
+    background: #2f336f;
     position: relative;
     display: flex;
     place-content: center;
@@ -57,7 +57,7 @@
 .about-lab-text::after {
   content: '';
   position: absolute;
-  background: #1b3353;
+  background: #2f336f;
   inset: 5px;
   border-radius: 15px;
 } 

@@ -2,10 +2,7 @@
     height: calc(100vh - 70px);
     margin-top: 70px;
 }
-.title {
-    height: 200px;
-    display: flex;
-    width: 100%;
+.findus.inner .title {
     justify-content: center;
 }
 .title h1 {
@@ -13,7 +10,7 @@
 }
 hr {
     width: 80%;
-    border: 2px solid rgba(26, 26, 112);
+    border: 2px solid #0009a0;
 }
 .findus-info {
     display: flex;
