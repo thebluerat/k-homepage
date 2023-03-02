@@ -3,15 +3,15 @@
     background-size: cover;
     height: 100vh;
 }
-.title {
+.index.title {
     display: flex;
     height: calc(100vh - 70px);
     align-items: center;
 }
-.title .inner > h1 {
+.index.title .inner > h1 {
     font-size: 4em;
 }
-.title .inner > span {
+.index.title .inner > span {
     font-size: 1.5em;
     display: block;
 }
@@ -20,19 +20,19 @@
         background-position: center center;
         background-repeat: no-repeat;background-attachment: fixed;background-size: cover;
     }
-    .title .inner {
+    .index.title .inner {
         width: 100%;
         padding: 30px;
     }
-    .title .inner > h1 {
+    .index.title .inner > h1 {
         margin: 0;
         line-height: 1em;
     }
-    .title .inner > h1, .title .inner > span {
+    .index.title .inner > h1, .title .inner > span {
         background-color: #dcfaffd2;
         mix-blend-mode: luminosity;
     }
-    .title .inner > span {
+    .index.title .inner > span {
         font-size: 1.2em;
         padding: 10px 0;
     }
